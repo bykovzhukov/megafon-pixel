@@ -78,6 +78,9 @@
 
         &:hover::after
             box-shadow 0 0 0 4px purple inset
+            
+            @media (hover none), (hover on-demand)
+                box-shadow 0 0 0 2px #000 inset
         
         &:active::after
             transform translate3d(3px,3px,0)

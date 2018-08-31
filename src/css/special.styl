@@ -1,0 +1,362 @@
+// Если спецпроект интегрирован в сайт, из media queries обычно хватает только двух: mobile и not_mobile
+@import 'mq'
+
+@import 'functions'
+@import 'keyframes'
+
+// base.styl подключается только в том случае, когда спецпроект расположен на отдельной странице
+// @import 'base'
+
+// $colors = {
+//     white: #ffffff,
+//     black: #000000
+// }
+
+// FYI: на десктопе на странице статьи максимальная ширина контейнера — 1060px. В ленте сайта — 640px.
+// Мобильная версия начинается с 679px, и там ограничений по ширине нет
+
+// Название класса рекомендуется выбирать так, чтобы точно не было конфликтов с существующими спецпроектами.
+// Обычно имени проекта достаточно
+
+.MegafonPixel
+    min-height 536px
+    color #000
+    font-size: 18px
+    line-height: 1.5em
+    border 1px solid  #D4D4D4
+    box-sizing border-box
+
+    background-color #fff
+    background-image linear-gradient(45deg, #F5F5F5 25%, transparent 25%, transparent 74%, #F5F5F5 75%, #F5F5F5), linear-gradient(45deg, #F5F5F5 25%, transparent 25%, transparent 74%, #F5F5F5 75%, #F5F5F5)
+    background-size 12px 12px
+    background-position 0 0, 6px 6px
+    
+    &--q
+        background-color #F6F6F6
+        background-image linear-gradient(45deg, #ECECEC 25%, transparent 25%, transparent 74%, #ECECEC 75%, #ECECEC), linear-gradient(45deg, #ECECEC 25%, transparent 25%, transparent 74%, #ECECEC 75%, #ECECEC)
+
+    // Для подобных элементов придется сбрасывать стили, если спецпроект не на отдельной странице
+    // input,
+    // button
+    //     box-sizing: border-box
+    //     display: block
+    //     width: 200px
+    //     padding: 10px
+    //     margin: 5px 0
+        
+    &-btn
+        position relative
+        width 100%
+        height 54px
+        margin 0
+        padding 0
+        border none
+        background-color transparent
+        box-shadow 6px 6px 0 rgba(0,0,0,.2)
+        cursor pointer
+        outline none
+        box-sizing border-box
+        
+        &::after
+            content attr(data-caption)
+            position absolute
+            top 0
+            left 0
+            width 100%
+            height 100%
+            padding 0 10px
+            color #000
+            font-size 16px
+            font-weight 500
+            line-height 54px
+            text-align center
+            box-shadow 0 0 0 2px #000 inset
+            background-color #fff
+            box-sizing border-box
+            overflow hidden
+            transition box-shadow .2s, transform .2s
+
+        &:hover::after
+            box-shadow 0 0 0 4px purple inset
+        
+        &:active::after
+            transform translate3d(3px,3px,0)
+        
+        &--bg
+            &::after
+                color #fff
+                font-size 20px
+                font-weight 700
+                background-image linear-gradient(to right, #00B856 0px, #00B856 100%)
+                background-repeat no-repeat
+                background-position 0 0
+                transition color .2s, background-position .4s, box-shadow .2s, transform .2s
+            
+            &:hover::after
+                color #000
+                background-position 200px 0
+                box-shadow 0 0 0 2px #000 inset
+            
+        &.is-wrong
+            cursor default
+
+            &::after
+                background-color #EB5A40
+
+            &:hover::after
+                box-shadow 0 0 0 2px #000 inset
+
+            &:active::after
+                transform translate3d(0,0,0)
+
+        &__icon
+            position absolute
+            z-index 3
+            top 50%
+            right 22px
+            display block
+            line-height 1
+            transform translate3d(0,-50%,0)
+            transition transform .2s
+            
+            ^[-1]:active &
+                transform translate3d(3px, calc(-50% + 3px), 0)
+                
+    &-enter
+        position relative
+        width 640px
+        max-width 100%
+        min-height 536px
+        margin 0 auto
+        padding 23px 25px 25px 39px
+        
+        &__header
+            display flex
+            justify-content space-between
+            align-items center
+        
+        &__tag
+            position relative
+            width 68px
+            height 38px
+            font-size 16px
+            font-weight 700
+            line-height 38px
+            text-align center
+            border 1px solid  #747474
+            
+            &::before
+            &::after
+            & span::before
+            & span::after
+                content ''
+                position absolute
+                width 6px
+                height 6px
+                background-color #747474
+                transform translate3d(-50%, -50%, 0)
+                
+            &::before
+                top 0
+                left 0
+                
+            &::after
+                top 0
+                left 100%
+            
+            & span::before
+                top 100%
+                left 100%
+                
+            & span::after
+                top 100%
+                left 0
+                
+        &__logo
+            display block
+            width 160px
+            height 29px
+            
+            & svg
+                width 100%
+                height 100%
+                fill #00B856
+        
+        &__title
+            position relative
+            width 318px
+            max-width 100%
+            margin-top 45px
+            font-size 44px
+            font-weight 900
+            line-height 1.091em
+            
+        &__summary
+            position relative
+            width 240px
+            max-width 100%
+            margin-top 10px
+        
+        &__start-btn
+            position absolute
+            bottom 28px
+            left 40px
+            width 146px
+            max-width 100%
+            
+        &__img
+            position absolute
+            bottom 0
+            right 0
+
+    &-q
+        width 640px
+        max-width 100%
+        margin 0 auto
+        padding 18px 24px 25px
+    
+        &__header
+            display flex
+            justify-content space-between
+            align-items center
+            margin-bottom 24px
+        
+        &__title
+            font-weight 500
+            line-height 1.333em
+        
+        &__pages
+            display flex
+            align-items center
+            font-size 16px
+            font-weight 500
+            
+            & span
+                margin-left 10px
+                
+        &__figure
+            position relative
+            width 482px
+            max-width 100%
+            margin 0 auto
+        
+        &__figure-img 
+            position relative
+            z-index 2
+            display block
+            width 100%
+
+        &__figure-bound
+            position absolute
+            z-index 1
+            top -6px
+            left -6px
+            width calc(100% + 12px)
+            height calc(100% + 12px)
+            border 1px solid #747474
+            box-sizing border-box
+            
+            & span
+                position absolute
+                top 0
+                bottom 0
+                left 0
+                right 0
+                width 100%
+                height 100%
+                
+                &::before
+                &::after
+                    content ''
+                    position absolute
+                    width 6px
+                    height 6px
+                    background-color #747474
+                    transform translate3d(-50%, -50%, 0)
+                    
+                &:nth-child(1)
+                    &::before
+                        top 0
+                        left 0
+                    
+                    &::after
+                        top 0
+                        left 50%
+                
+                &:nth-child(2)
+                    &::before
+                        top 0
+                        left 100%
+                    
+                    &::after
+                        top 50%
+                        left 100%
+                        
+                &:nth-child(3)
+                    &::before
+                        top 100%
+                        left 100%
+                    
+                    &::after
+                        top 100%
+                        left 50%
+                        
+                &:nth-child(4)
+                    &::before
+                        top 100%
+                        left 0
+                    
+                    &::after
+                        top 50%
+                        left 0
+        
+        &__options
+            display flex
+            flex-wrap wrap
+            margin -8px 0 0 -21px
+            padding-top 43px
+            
+        &__options-item
+            width 100%
+            padding 8px 0 0 21px
+            
+            @media (min-width 480px)
+                width 50%
+            
+        &__answer
+            width 292px
+            max-width 100%
+            margin 27px auto 0
+            text-align center
+            
+        &__answer-title
+            font-size 22px
+            font-weight 700
+        
+        &__answer-text
+            margin-top 1px
+            font-weight 500
+            line-height 1.3em
+        
+        &__next-btn
+            width 284px
+            max-width 100%
+            margin 35px auto 0
+        
+    .likely
+        &--custom
+            display: flex
+
+        &__widget
+            flex-shrink: 0
+            display: flex
+            align-items: center
+            justify-content: center
+            cursor: pointer
+
+        &__counter
+            display: none
+
+        &__icon
+            svg
+                display: block

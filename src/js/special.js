@@ -44,7 +44,7 @@ class Special extends BaseSpecial {
         });
         EL.qPagesText = makeElement('span');
         EL.qFigure = makeElement('div', CSS.main + '-q__figure');
-        EL.qFigureBound = makeElement('div', CSS.main + '-q__figure-bound', {
+        EL.qFigureBound = makeElement('div', CSS.main + '-bound', {
             innerHTML: '<span></span><span></span><span></span><span></span>'
         });
         EL.qFigureImg = makeElement('img', CSS.main + '-q__figure-img');
@@ -68,6 +68,41 @@ class Special extends BaseSpecial {
                 click: 'showResult'
             }
         });
+
+        EL.result = makeElement('div', CSS.main + '-result');
+        EL.rBody = makeElement('div', CSS.main + '-result__body');
+        EL.rFigure = makeElement('div', CSS.main + '-result__figure');
+        EL.rBound = makeElement('div', CSS.main + '-bound', {
+            innerHTML: '<span></span><span></span><span></span><span></span>'
+        });
+        EL.rTitle = makeElement('div', CSS.main + '-result__title');
+        EL.rFigureBottom = makeElement('div', CSS.main + '-result__figure-bottom');
+        EL.rShare = makeElement('div', CSS.main + '-result__share');
+        EL.rRestartBtn = makeElement('div', CSS.main + '-result__restart-btn', {
+            innerHTML: '<span>Пройти еще раз</span>' + Svg.refresh,
+            data: {
+                click: 'restart'
+            }
+        });
+        EL.rBottom = makeElement('div', CSS.main + '-result__bottom');
+        EL.rText = makeElement('div', CSS.main + '-result__text', {
+            innerHTML: '<p>С мобильным интернетом от «МегаФона» не придётся угадывать, что изображено на картинке — всё загрузится быстро. Доказано измерениями миллионов пользователей в Speedtest.</p>'
+        });
+        EL.rBtn = makeElement('div', CSS.main + '-result__btn', {
+            innerHTML: '<a href="#" class="MegafonPixel-btn" data-caption="Подкючить"></a>'
+        });
+
+        EL.rFigureBottom.appendChild(EL.rShare);
+        EL.rFigureBottom.appendChild(EL.rRestartBtn);
+        EL.rFigure.appendChild(EL.rBound);
+        EL.rFigure.appendChild(EL.rTitle);
+        EL.rFigure.appendChild(EL.rFigureBottom);
+        EL.rBody.appendChild(EL.rFigure);
+        EL.rBottom.appendChild(EL.rText);
+        EL.rBottom.appendChild(EL.rBtn);
+        EL.result.appendChild(EL.rBody);
+        EL.result.appendChild(EL.rBottom);
+
 
         EL.qPages.appendChild(EL.qPagesText);
 
@@ -202,7 +237,18 @@ class Special extends BaseSpecial {
     showResult() {
         console.log(this.correctAnswers);
 
-        this.restart();
+        removeChildren(this.container);
+        this.container.appendChild(EL.result);
+
+        EL.rTitle.innerHTML = 'Я угадал ' + this.correctAnswers + ' из ' + Data.questions.length + ' героев с&nbsp;первого раза';
+
+        removeChildren(EL.rShare);
+        Share.make(EL.rShare, {
+            // url: this.params.share.url + this.correctAnswers,
+            // title: this.params.share.title,
+            // twitter: this.params.share.twitter
+        });
+
     }
 
     restart() {

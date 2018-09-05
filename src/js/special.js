@@ -39,7 +39,7 @@ class Special extends BaseSpecial {
         EL.q = makeElement('div', CSS.main + '-q');
         EL.qHeader = makeElement('div', CSS.main + '-q__header');
         EL.qTitle = makeElement('div', CSS.main + '-q__title', {
-            textContent: 'Угадайте, что изображено'
+            innerHTML: 'Угадайте, что изображено на&nbsp;картинке'
         });
         EL.qPages = makeElement('div', CSS.main + '-q__pages', {
             innerHTML: Svg.img

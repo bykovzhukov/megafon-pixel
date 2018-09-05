@@ -6,33 +6,7 @@ export default {
     description: 'Угадайте, что изображено на пиксельном изображении',
     questions: [{
         title: '',
-        msg: 'Это зелёный лого «Мегафона»',
-        images: [{
-            img: 'img/q/1/1.png',
-            img2x: 'img/q/1/1.png',
-        }, {
-            img: 'img/q/1/2.png',
-            img2x: 'img/q/1/2.png',
-        }, {
-            img: 'img/q/1/3.png',
-            img2x: 'img/q/1/3.png',
-        }, {
-            img: 'img/q/1/4.png',
-            img2x: 'img/q/1/4.png',
-        }],
-        options: [{
-            text: 'Зелёный лого «Мегафона»',
-            isCorrect: true
-        }, {
-            text: 'Whats App'
-        }, {
-            text: 'Деливери'
-        }, {
-            text: 'Старбакс'
-        }]
-    }, {
-        title: '',
-        msg: 'Это Лада',
+        msg: 'Это LADA',
         images: [{
             img: 'img/q/2/1.png',
             img2x: 'img/q/2/1.png',
@@ -47,7 +21,7 @@ export default {
             img2x: 'img/q/2/4.png',
         }],
         options: [{
-            text: 'Лада',
+            text: 'LADA',
             isCorrect: true
         }, {
             text: 'BMW'
@@ -58,7 +32,7 @@ export default {
         }]
     }, {
         title: '',
-        msg: 'Это купюра 10 рублей',
+        msg: 'Это рубли',
         images: [{
             img: 'img/q/3/1.png',
             img2x: 'img/q/3/1.png',
@@ -73,13 +47,13 @@ export default {
             img2x: 'img/q/3/4.png',
         }],
         options: [{
-            text: '100 долларов'
+            text: 'Доллары'
         }, {
-            text: '200 шекелей'
+            text: 'Евро'
         }, {
-            text: '100 рублей'
+            text: 'Йены'
         }, {
-            text: '10 рублей',
+            text: 'Рубли',
             isCorrect: true
         }]
     }, {
@@ -107,6 +81,32 @@ export default {
             isCorrect: true
         }, {
             text: 'Коленка'
+        }]
+    }, {
+        title: '',
+        msg: 'Это лого «МегаФона»',
+        images: [{
+            img: 'img/q/1/1.png',
+            img2x: 'img/q/1/1.png',
+        }, {
+            img: 'img/q/1/2.png',
+            img2x: 'img/q/1/2.png',
+        }, {
+            img: 'img/q/1/3.png',
+            img2x: 'img/q/1/3.png',
+        }, {
+            img: 'img/q/1/4.png',
+            img2x: 'img/q/1/4.png',
+        }],
+        options: [{
+            text: 'Лого «МегаФона»',
+            isCorrect: true
+        }, {
+            text: 'Лого Starbucks'
+        }, {
+            text: 'Лого WhatsApp'
+        }, {
+            text: 'Лого Delivery Club'
         }]
     }],
     results: [{

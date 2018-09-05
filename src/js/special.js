@@ -236,7 +236,7 @@ class Special extends BaseSpecial {
         EL.q.appendChild(EL.qAnswer);
 
         EL.qAnswerTitle.textContent = isCorrect === undefined ? 'С первого раза не угадали.' : isCorrect ? 'Правильно!' : 'Неправильно.';
-        isCorrect ? EL.qAnswerTitle.classList.add(CSS.main + '-q__answer--correct') : EL.qAnswerTitle.classList.remove(CSS.main + '-q__answer--correct');
+        isCorrect ? EL.qAnswerTitle.classList.add(CSS.main + '-q__answer-title--correct') : EL.qAnswerTitle.classList.remove(CSS.main + '-q__answer-title--correct');
         EL.qAnswerText.innerHTML = question.msg;
 
         if (this.activeIndex >= Data.questions.length - 1) {

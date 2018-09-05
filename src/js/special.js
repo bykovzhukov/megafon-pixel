@@ -38,7 +38,9 @@ class Special extends BaseSpecial {
     createElements() {
         EL.q = makeElement('div', CSS.main + '-q');
         EL.qHeader = makeElement('div', CSS.main + '-q__header');
-        EL.qTitle = makeElement('div', CSS.main + '-q__title');
+        EL.qTitle = makeElement('div', CSS.main + '-q__title', {
+            textContent: 'Угадайте, что изображено'
+        });
         EL.qPages = makeElement('div', CSS.main + '-q__pages', {
             innerHTML: Svg.img
         });
@@ -75,7 +77,10 @@ class Special extends BaseSpecial {
         EL.rBound = makeElement('div', CSS.main + '-bound', {
             innerHTML: '<span></span><span></span><span></span><span></span>'
         });
+        EL.rFigureInner = makeElement('div', CSS.main + '-result__figure-inner');
+        EL.rHeadline = makeElement('div', CSS.main + '-result__headline');
         EL.rTitle = makeElement('div', CSS.main + '-result__title');
+        EL.rImg = makeElement('img', CSS.main + '-result__img');
         EL.rFigureBottom = makeElement('div', CSS.main + '-result__figure-bottom');
         EL.rShare = makeElement('div', CSS.main + '-result__share');
         EL.rRestartBtn = makeElement('div', CSS.main + '-result__restart-btn', {
@@ -94,9 +99,12 @@ class Special extends BaseSpecial {
 
         EL.rFigureBottom.appendChild(EL.rShare);
         EL.rFigureBottom.appendChild(EL.rRestartBtn);
+        EL.rFigureInner.appendChild(EL.rHeadline);
+        EL.rFigureInner.appendChild(EL.rTitle);
+        EL.rFigureInner.appendChild(EL.rImg);
+        EL.rFigureInner.appendChild(EL.rFigureBottom);
         EL.rFigure.appendChild(EL.rBound);
-        EL.rFigure.appendChild(EL.rTitle);
-        EL.rFigure.appendChild(EL.rFigureBottom);
+        EL.rFigure.appendChild(EL.rFigureInner);
         EL.rBody.appendChild(EL.rFigure);
         EL.rBottom.appendChild(EL.rText);
         EL.rBottom.appendChild(EL.rBtn);
@@ -122,6 +130,18 @@ class Special extends BaseSpecial {
         EL.q.appendChild(EL.qFigure);
         EL.q.appendChild(EL.qOptions);
     }
+
+    getResult(score) {
+        let result = '';
+        Data.results.some(item => {
+          if (item.range[0] <= score && item.range[1] >= score) {
+            result = item;
+            return true;
+          }
+        });
+
+        return result;
+      }
 
     storeImages(data) {
         let img;
@@ -170,7 +190,7 @@ class Special extends BaseSpecial {
     makeNextQuestion() {
         let question = Data.questions[this.activeIndex];
 
-        EL.qTitle.textContent = question.title;
+        // EL.qTitle.textContent = question.title;
 
         this.setImage(question.images[0]);
 
@@ -216,6 +236,7 @@ class Special extends BaseSpecial {
         EL.q.appendChild(EL.qAnswer);
 
         EL.qAnswerTitle.textContent = isCorrect === undefined ? 'С первого раза не угадали.' : isCorrect ? 'Правильно!' : 'Неправильно.';
+        isCorrect ? EL.qAnswerTitle.classList.add(CSS.main + '-q__answer--correct') : EL.qAnswerTitle.classList.remove(CSS.main + '-q__answer--correct');
         EL.qAnswerText.innerHTML = question.msg;
 
         if (this.activeIndex >= Data.questions.length - 1) {
@@ -235,12 +256,18 @@ class Special extends BaseSpecial {
     }
 
     showResult() {
-        console.log(this.correctAnswers);
+        let result = this.getResult(this.correctAnswers);
 
         removeChildren(this.container);
         this.container.appendChild(EL.result);
 
-        EL.rTitle.innerHTML = 'Я угадал ' + this.correctAnswers + ' из ' + Data.questions.length + ' героев с&nbsp;первого раза';
+        EL.rHeadline.innerHTML = this.correctAnswers + ' из ' + Data.questions.length + ' изображений с&nbsp;первого раза';
+        EL.rTitle.innerHTML = result.text;
+        EL.rImg.classList = '';
+        EL.rImg.classList.add(CSS.main + '-result__img');
+        EL.rImg.classList.add(CSS.main + '-result__img--' + result.index);
+        EL.rImg.src = result.img;
+        EL.rImg.srcset = result.img2x + ' 2x';
 
         removeChildren(EL.rShare);
         Share.make(EL.rShare, {

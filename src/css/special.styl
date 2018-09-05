@@ -7,11 +7,6 @@
 // base.styl подключается только в том случае, когда спецпроект расположен на отдельной странице
 // @import 'base'
 
-// $colors = {
-//     white: #ffffff,
-//     black: #000000
-// }
-
 // FYI: на десктопе на странице статьи максимальная ширина контейнера — 1060px. В ленте сайта — 640px.
 // Мобильная версия начинается с 679px, и там ограничений по ширине нет
 
@@ -198,16 +193,18 @@
         width 640px
         max-width 100%
         margin 0 auto
-        padding 20px 15px
+        padding 20px 15px 10px
         
         @media $mq.iphone6
-            padding 23px 25px 25px 39px
+            padding 22px 20px 10px
         
         @media $mq.not_mobile
             min-height 536px
+            padding 23px 25px 25px 39px
         
         &__header
             position relative
+            z-index 2
             display flex
             justify-content space-between
             align-items center
@@ -261,36 +258,62 @@
         
         &__title
             position relative
-            width 318px
-            max-width 100%
-            margin-top 45px
-            font-size 44px
+            z-index 2
+            margin-top 20px
+            color #760084
+            font-size 32px
             font-weight 900
             line-height 1.091em
             
+            @media $mq.iphone6
+                margin-top 30px
+                font-size 38px
+
+            @media $mq.not_mobile
+                width 318px
+                max-width 100%
+                margin-top 45px
+                font-size 44px
+            
         &__summary
             position relative
-            width 250px
-            max-width 100%
-            margin-top 10px
+            z-index 2
+            margin-top 5px
+            
+            @media $mq.iphone6
+                margin-top 10px
+                
+            @media $mq.not_mobile
+                width 250px
+                max-width 100%
         
         &__start-btn
-            width 146px
-            max-width 100%
-            margin-top 50px
-            
+            margin-top -8px
+            max-width 380px
+
             @media $mq.not_mobile
                 position absolute
+                z-index 2
                 bottom 28px
                 left 40px
+                width 146px
                 margin-top 0
             
         &__img
-            position absolute
-            bottom 0
-            right 0
-            width 54%
+            width calc(100% - 40px)
             max-width 340px
+            margin 10px 0 0 20px
+            
+            @media $mq.iphone6
+                margin-top 20px
+
+            @media $mq.not_mobile
+                position absolute
+                bottom 0
+                right 0
+                width 340px
+                max-width 100%
+                margin 0
 
     &-q
         width 640px
@@ -319,7 +342,7 @@
                 
         &__figure
             position relative
-            width 482px
+            width 480px
             max-width 100%
             margin 0 auto
         
@@ -347,6 +370,9 @@
             max-width 100%
             margin 27px auto 0
             text-align center
+            
+            &--correct
+                color #00B856
             
         &__answer-title
             font-size 20px
@@ -379,28 +405,87 @@
             padding 20px 15px
             
             @media $mq.iphone6
+                padding 22px 20px
+            
+            @media $mq.not_mobile
                 padding 40px 30px
             
         &__figure
             position relative
+            background-color #fff
+        
+        &__figure-inner
+            position relative
             padding 20px 15px
-            background-color #D8D8D8
+            overflow hidden
+            background-color #fff
             
             @media $mq.not_mobile
-                height 314px
+                min-height 314px
                 padding 24px 30px 0
+
+        &__headline
+            position relative
+            z-index 2
+            font-size 14px
+            font-weight 700
+            line-height 1
             
+            @media $mq.iphone6
+                font-size 16px
+
+            @media $mq.not_mobile
+                font-size 18px
+
         &__title
             position relative
             z-index 2
-            width 316px
+            width 240px
             max-width 100%
-            font-size 22px
+            margin-top 32px
+            font-size 34px
             font-weight 700
-            line-height 1.179em
+            line-height 1.176em
             
             @media $mq.iphone6
-                font-size 28px
+                margin-top 70px
+                
+            @media $mq.iphone5_landspace
+                width 340px
+            
+            @media $mq.not_mobile
+                margin-top 32px
+                
+        &__img
+            position absolute
+            z-index 1
+
+            &--1
+                bottom 0
+                right 0
+                width 184px
+            
+            &--2
+                top 30px
+                left 146px
+                
+                @media $mq.iphone6
+                    top 80px
+                    
+                @media $mq.iphone5_landspace
+                    left auto
+                    right 0
+                
+                @media $mq.not_mobile
+                    top 16px
+            
+            &--3
+                bottom 0
+                right 0
+                width 184px
+                
+            @media $mq.not_mobile
+                width auto
             
         &__figure-bottom
             position relative
@@ -442,19 +527,21 @@
                 margin 0 0 0 28px
         
         &__bottom
-            padding 18px 15px
+            padding 20px 15px
             background-color #00B856
             
             @media $mq.iphone6
-                padding 33px 30px
+                padding 22px 20px
                 
             @media $mq.not_mobile
                 display flex
                 justify-content space-between
                 align-items center
                 min-height 142px
+                padding 33px 30px
 
         &__text
+            color #fff
             font-weight 700
             line-height 1.389em
             

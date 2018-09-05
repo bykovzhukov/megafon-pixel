@@ -6,7 +6,7 @@ export default {
     description: 'Угадайте, что изображено на пиксельном изображении',
     questions: [{
         title: '',
-        msg: 'Это LADA',
+        msg: 'Это LADA.',
         images: [{
             img: 'img/q/2/1.png',
             img2x: 'img/q/2/1.png',
@@ -32,7 +32,7 @@ export default {
         }]
     }, {
         title: '',
-        msg: 'Это рубли',
+        msg: 'Это рубли.',
         images: [{
             img: 'img/q/3/1.png',
             img2x: 'img/q/3/1.png',
@@ -57,7 +57,7 @@ export default {
             isCorrect: true
         }]
     }, {
-        title: 'Кто изображен на картинке?',
+        title: '',
         msg: 'Это Павел Дуров с голым торсом.',
         images: [{
             img: 'img/q/10/1.jpg',
@@ -84,7 +84,7 @@ export default {
         }]
     }, {
         title: '',
-        msg: 'Это лого «МегаФона»',
+        msg: 'Это лого «МегаФона».',
         images: [{
             img: 'img/q/1/1.png',
             img2x: 'img/q/1/1.png',

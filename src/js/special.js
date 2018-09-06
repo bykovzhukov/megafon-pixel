@@ -45,6 +45,7 @@ class Special extends BaseSpecial {
             innerHTML: Svg.img
         });
         EL.qPagesText = makeElement('span');
+        EL.qFigureWrap = makeElement('div', CSS.main + '-q__figure-wrap');
         EL.qFigure = makeElement('div', CSS.main + '-q__figure');
         EL.qFigureBound = makeElement('div', CSS.main + '-bound', {
             innerHTML: '<span></span><span></span><span></span><span></span>'
@@ -120,6 +121,8 @@ class Special extends BaseSpecial {
         EL.qFigure.appendChild(EL.qFigureBound);
         EL.qFigure.appendChild(EL.qFigureImg);
 
+        EL.qFigureWrap.appendChild(EL.qFigure);
+
         EL.qBtn.appendChild(EL.qNextBtn);
 
         EL.qAnswer.appendChild(EL.qAnswerTitle);
@@ -127,7 +130,7 @@ class Special extends BaseSpecial {
         EL.qAnswer.appendChild(EL.qBtn);
 
         EL.q.appendChild(EL.qHeader);
-        EL.q.appendChild(EL.qFigure);
+        EL.q.appendChild(EL.qFigureWrap);
         EL.q.appendChild(EL.qOptions);
     }
 

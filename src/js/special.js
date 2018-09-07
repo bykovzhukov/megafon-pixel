@@ -92,7 +92,7 @@ class Special extends BaseSpecial {
         });
         EL.rBottom = makeElement('div', CSS.main + '-result__bottom');
         EL.rText = makeElement('div', CSS.main + '-result__text', {
-            innerHTML: '<p>С мобильным интернетом от «МегаФона» не придётся угадывать, что изображено на картинке — всё загрузится быстро. Доказано измерениями миллионов пользователей в Speedtest.</p>'
+            innerHTML: '<p>С мобильным интернетом от «МегаФона» не придётся угадывать, что изображено на картинке — всё загрузится моментально. Доказано измерениями миллионов пользователей в Speedtest.</p>'
         });
         EL.rBtn = makeElement('div', CSS.main + '-result__btn', {
             innerHTML: '<a href="#" class="MegafonPixel-btn" data-caption="Подкючить"></a>'

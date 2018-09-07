@@ -320,7 +320,10 @@
         width 640px
         max-width 100%
         margin 0 auto
-        padding 18px 24px 25px
+        padding 18px 20px 25px
+        
+        @media $mq.not_mobile
+            padding 18px 24px 25px
     
         &__header
             display flex
@@ -339,7 +342,7 @@
         &__pages
             display flex
             align-items center
-            margin-left 10px
+            margin-left 20px
             font-size 16px
             font-weight 500
             
@@ -396,7 +399,16 @@
             margin-top 1px
             font-weight 500
             line-height 1.3em
-        
+            
+            & a
+                display inline
+                color #105990
+                border-bottom 1px solid #a0d0f5
+
+                &:hover
+                    color #cd192e
+                    border-bottom 1px solid #f6b4bc
+
         &__next-btn
             width 284px
             max-width 100%
@@ -414,10 +426,7 @@
         &__body
             position relative
             padding 20px 15px
-            
-            @media $mq.iphone6
-                padding 22px 20px
-            
+
             @media $mq.not_mobile
                 padding 40px 30px
             
@@ -427,7 +436,8 @@
         
         &__figure-inner
             position relative
-            padding 20px 15px
+            min-height 324px
+            padding 16px 14px
             overflow hidden
             background-color #fff
             
@@ -453,14 +463,11 @@
             z-index 2
             width 240px
             max-width 100%
-            margin-top 32px
+            margin-top 35px
             font-size 34px
             font-weight 700
             line-height 1.176em
-            
-            @media $mq.iphone6
-                margin-top 70px
-                
+
             @media $mq.iphone5_landspace
                 width 340px
             
@@ -472,16 +479,16 @@
             z-index 1
 
             &--1
-                bottom 0
-                right 0
-                width 184px
+                top 80px
+                left 110px
+                
+                @media $mq.not_mobile
+                    top 40px
+                    right 25px
             
             &--2
                 top 30px
                 left 146px
-                
-                @media $mq.iphone6
-                    top 80px
                     
                 @media $mq.iphone5_landspace
                     left auto
@@ -492,22 +499,23 @@
             
             &--3
                 bottom 0
-                right 0
-                width 184px
+                left 46%
+                width 216px
                 
             @media $mq.not_mobile
                 width auto
+                left auto
+                right 0
             
         &__figure-bottom
-            position relative
+            position absolute
             z-index 2
-            padding-top 30px
+            bottom 0
+            left 0
+            right 0
+            padding 0 16px 20px
             
             @media $mq.not_mobile
-                position absolute
-                bottom 0
-                left 0
-                right 0
                 display flex
                 align-items center
                 padding 0 30px 32px
@@ -542,7 +550,7 @@
             background-color #00B856
             
             @media $mq.iphone6
-                padding 22px 20px
+                padding 28px 20px
                 
             @media $mq.not_mobile
                 display flex
@@ -555,6 +563,9 @@
             color #fff
             font-weight 700
             line-height 1.389em
+            
+            @media $mq.iphone6
+                font-size 22px
             
             @media $mq.not_mobile
                 width 386px

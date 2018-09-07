@@ -20,7 +20,7 @@
 
     <!-- Если спецпроект интегрирован в статью, используется такая конструкция -->
     <div class="l-wide_container">
-        <div id="megafon-pixel" class="MegafonPixel">
+        <div id="megafon-pixel" class="MegafonPixel" style="display: none;">
             <div class="MegafonPixel-enter">
                 <div class="MegafonPixel-enter__header">
                     <div class="MegafonPixel-enter__tag">
@@ -35,7 +35,7 @@
                 </div>
                 <div class="MegafonPixel-enter__title">Картинка не загрузилась</div>
                 <div class="MegafonPixel-enter__summary">Угадайте, что изображено на&nbsp;пиксельном изображении.</div>
-                <img src="img/tinkoff.png" srcset="img/tinkoff@2x.png 2x" alt="" class="MegafonPixel-enter__img">
+                <img src="https://leonardo.osnova.io/943d3d95-cc49-78af-7cc4-4d7a3c99423b/" srcset="https://leonardo.osnova.io/5e6c58c3-5039-2498-2b2e-ab99859bf861/ 2x" alt="" class="MegafonPixel-enter__img">
                 <div class="MegafonPixel-enter__start-btn">
                     <button id="megafon-pixel-start" class="MegafonPixel-btn MegafonPixel-btn--bg" data-caption="Начать"></button>
                 </div>
@@ -53,6 +53,7 @@
                 startBtn = d.getElementById('megafon-pixel-start');
 
             s.onload = function() {
+                container.style.display = 'block';
                 var special = new MegafonPixel.Special({
                     // css: './all.css?' + ver,
                     container: container,

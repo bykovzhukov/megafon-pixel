@@ -57,17 +57,17 @@ export default {
     }, {
         msg: 'Это лого «МегаФона».',
         images: [{
-            img: 'https://leonardo.osnova.io/01858f90-6af7-af0b-05c2-f40c67f4de29/',
-            img2x: 'https://leonardo.osnova.io/aa3c5165-30b9-0270-5e55-2dd1d11ce489/',
+            img: 'https://leonardo.osnova.io/e510c99d-4398-d5ac-4cef-819bf0ec71ab/',
+            img2x: 'https://leonardo.osnova.io/a4306833-96a7-8155-71e9-47472c000150/',
         }, {
-            img: 'https://leonardo.osnova.io/73909884-9473-f361-2a15-b19d911f75e5/',
-            img2x: 'https://leonardo.osnova.io/712c5d91-5d3c-4a74-0f62-988c665e03dc/',
+            img: 'https://leonardo.osnova.io/a92fb875-ee91-d6d5-0941-e06f72998eed/',
+            img2x: 'https://leonardo.osnova.io/a11e9907-1c33-87fb-91f0-ec9d52133580/',
         }, {
-            img: 'https://leonardo.osnova.io/a3f92840-162b-b517-af08-e5a7bd478694/',
-            img2x: 'https://leonardo.osnova.io/2c77c58c-b1c5-0d9f-2b8f-b6267e5960ae/',
+            img: 'https://leonardo.osnova.io/02d7d7cf-726d-f024-982d-8bf116116d85/',
+            img2x: 'https://leonardo.osnova.io/bb83f3a9-fd54-a18d-21c7-e6141754b1ed/',
         }, {
-            img: 'https://leonardo.osnova.io/491bea03-2dc5-d725-02a7-5562653ae206/',
-            img2x: 'https://leonardo.osnova.io/aef23e87-8f36-7f92-8acf-048e87a94c3d/',
+            img: 'https://leonardo.osnova.io/c9817876-00f4-650f-e030-4179e6fe317a/',
+            img2x: 'https://leonardo.osnova.io/f098c191-7039-2675-4a83-656f0b2044d4/',
         }],
         options: [{
             text: 'Лого «МегаФона»',
@@ -155,7 +155,7 @@ export default {
             text: 'Печенье'
         }]
     }, {
-        msg: 'Это роскомнадзор.',
+        msg: 'Это сайт Роскомнадзора.',
         images: [{
             img: 'https://leonardo.osnova.io/4c449935-8ed5-bf93-8cbc-be47dc56959f/',
             img2x: 'https://leonardo.osnova.io/16e24103-f7d4-bc58-d147-5c6b3e41bc8d/',
@@ -180,7 +180,7 @@ export default {
             text: 'Telegram'
         }]
     }, {
-        msg: 'Это milliondollarhomepage.com.',
+        msg: 'Это <a href="http://milliondollarhomepage.com/" target="_blank">milliondollarhomepage.com</a>.',
         images: [{
             img: 'https://leonardo.osnova.io/6888febc-f046-682a-5644-5359918832ae/',
             img2x: 'https://leonardo.osnova.io/c9274fca-ea3b-4977-190f-c61cf4387d8a/',
@@ -258,20 +258,20 @@ export default {
     results: [{
         index: 1,
         range: [0,3],
-        text: 'Эти три пикселя — нос?',
-        img: 'img/result/3.jpg',
-        img2x: 'img/result/3@2x.jpg'
+        text: 'Это голубь?',
+        img: 'https://leonardo.osnova.io/5b1c084d-99d6-b930-c863-f3acec2d5c84/',
+        img2x: 'https://leonardo.osnova.io/c7480e1d-aa8c-f9d3-fccc-bba4c52c207f/'
     }, {
         index: 2,
         range: [4,7],
         text: 'Догружаю картинки в&nbsp;голове',
-        img: 'img/result/2.jpg',
-        img2x: 'img/result/2@2x.jpg'
+        img: 'https://leonardo.osnova.io/59d57d9d-984e-cdce-8950-cb38a5ab2340/',
+        img2x: 'https://leonardo.osnova.io/991cf4fe-7477-0475-e07c-fc929d9a4994/'
     }, {
         index: 3,
         range: [8,10],
         text: 'Статус: Растрамен',
-        img: 'img/result/3.jpg',
-        img2x: 'img/result/3@2x.jpg'
+        img: 'https://leonardo.osnova.io/60ca9edf-6861-5e57-1276-204a773bbe30/',
+        img2x: 'https://leonardo.osnova.io/5973b32f-251e-d36a-20f3-089ca6d76f03/'
     }]
 };

@@ -14,7 +14,6 @@ const CSS = {
 };
 
 const EL = {};
-
 const IMAGES = {};
 
 class Special extends BaseSpecial {
@@ -316,6 +315,7 @@ class Special extends BaseSpecial {
     }
 
     init() {
+        this.container.style.display = 'block';
         this.setInitialParamas();
 
         this.createElements();

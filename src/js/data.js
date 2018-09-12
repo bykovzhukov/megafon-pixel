@@ -30,7 +30,7 @@ export default {
             text: 'Jaguar'
         }]
     }, {
-        msg: 'Это Греф-инвалид.',
+        msg: 'Это Герман Греф.',
         images: [{
             img: 'https://leonardo.osnova.io/6de63272-1221-8edb-8ce8-c18fa84c54f5/',
             img2x: 'https://leonardo.osnova.io/a0709e94-4bfa-c97a-3e69-304c3b9170f1/',
@@ -45,7 +45,7 @@ export default {
             img2x: 'https://leonardo.osnova.io/5de8b6fe-74c8-0c6f-77f3-9c5a7383ae1c/',
         }],
         options: [{
-            text: 'Греф-инвалид',
+            text: 'Герман Греф',
             isCorrect: true
         }, {
             text: 'Робокоп'

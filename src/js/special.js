@@ -202,7 +202,7 @@ class Special extends BaseSpecial {
     }
 
     checkAnswer(el, e) {
-        if (el.dataset.answered) { return; }
+        if (this.answered || el.dataset.answered) { return; }
 
         let id = el.dataset.id,
             question = Data.questions[this.activeIndex];
@@ -210,11 +210,21 @@ class Special extends BaseSpecial {
         this.currentAttempts++;
 
         if (question.options[id].isCorrect) {
+            el.classList.add('is-correct');
+            this.answered = true;
+
             if (this.currentAttempts === 1) {
                 this.correctAnswers++;
-                this.showAnswer(true);
+
+                setTimeout(() => {
+                    this.answered = false;
+                    this.showAnswer(true);
+                }, 1000);
             } else {
-                this.showAnswer(undefined);
+                setTimeout(() => {
+                    this.answered = false;
+                    this.showAnswer(undefined);
+                }, 1000);
             }
 
         } else {

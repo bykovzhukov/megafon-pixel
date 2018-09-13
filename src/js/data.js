@@ -5,32 +5,32 @@ export default {
     title: 'Картинка не загрузилась',
     description: 'Угадайте, что изображено на пиксельном изображении',
     questions: [{
-        msg: 'Это LADA.',
+        msg: 'Это Рик и Морти.',
         images: [{
-            img: 'https://leonardo.osnova.io/cde0c5ed-87a2-e39e-14fd-1b43c90a6d50/',
-            img2x: 'https://leonardo.osnova.io/6bbca432-10a8-f1d0-35d2-cd5e79cfd2a4/',
+            img: 'https://leonardo.osnova.io/8a2d2d5d-6a36-31e2-9ed6-b64e723a2bb0/',
+            img2x: 'https://leonardo.osnova.io/e0ce4cb2-037c-a653-e3ba-22f33472e5c5/',
         }, {
-            img: 'https://leonardo.osnova.io/2783a9e6-c699-0a82-2156-0f9d0f904d69/',
-            img2x: 'https://leonardo.osnova.io/7d0c97a1-30d7-e7dd-a89f-231f3fe7636e/',
+            img: 'https://leonardo.osnova.io/1b6b96c7-ac24-7975-1040-e161c7225621/',
+            img2x: 'https://leonardo.osnova.io/de921f9b-bcc5-ea5a-34af-4d20bfe3d3f8/',
         }, {
-            img: 'https://leonardo.osnova.io/909994ed-1aef-f226-911c-4ddb2712dba1/',
-            img2x: 'https://leonardo.osnova.io/439f529b-a063-7309-0d75-e9e81222b44a/',
+            img: 'https://leonardo.osnova.io/7cd43df2-458b-c94c-0020-f119cec11347/',
+            img2x: 'https://leonardo.osnova.io/dafc3590-9c14-9484-afdd-a29f4c879b1b/',
         }, {
-            img: 'https://leonardo.osnova.io/8f3e04c2-6a50-bfe3-4e6b-287de1646a0b/',
-            img2x: 'https://leonardo.osnova.io/760a36d7-c435-75a4-6f73-b33fd677f607/',
+            img: 'https://leonardo.osnova.io/a5eea722-d8ac-d65b-d43b-b45428a9c056/',
+            img2x: 'https://leonardo.osnova.io/949c43b3-f491-df02-e65a-390e6f7345b2/',
         }],
         options: [{
-            text: 'LADA',
+            text: 'Рик и Морти',
             isCorrect: true
         }, {
-            text: 'BMW'
+            text: '«Футурама»'
         }, {
-            text: 'Audi'
+            text: 'Док и Марти'
         }, {
-            text: 'Jaguar'
+            text: 'Улитка Гэри'
         }]
     }, {
-        msg: 'Это Герман Греф.',
+        msg: 'Это Греф в «костюме инвалида».',
         images: [{
             img: 'https://leonardo.osnova.io/6de63272-1221-8edb-8ce8-c18fa84c54f5/',
             img2x: 'https://leonardo.osnova.io/a0709e94-4bfa-c97a-3e69-304c3b9170f1/',
@@ -41,11 +41,11 @@ export default {
             img: 'https://leonardo.osnova.io/35a4f326-762d-32ef-d14c-aa4a9ac9f60e/',
             img2x: 'https://leonardo.osnova.io/7a67b68b-72d5-d90f-448c-2550bfbd0121/',
         }, {
-            img: 'https://leonardo.osnova.io/38d22e80-7c05-54dc-0e6f-f6f50c1a0ecd/',
-            img2x: 'https://leonardo.osnova.io/5de8b6fe-74c8-0c6f-77f3-9c5a7383ae1c/',
+            img: 'https://leonardo.osnova.io/583ce2d5-dd7c-5b15-bda2-c33d730935f5/',
+            img2x: 'https://leonardo.osnova.io/4ec00ae4-6d37-8def-ccfe-03819e7ac7b2/',
         }],
         options: [{
-            text: 'Герман Греф',
+            text: 'Греф в «костюме инвалида»',
             isCorrect: true
         }, {
             text: 'Робокоп'
@@ -57,17 +57,17 @@ export default {
     }, {
         msg: 'Это лого «МегаФона».',
         images: [{
-            img: 'https://leonardo.osnova.io/e510c99d-4398-d5ac-4cef-819bf0ec71ab/',
-            img2x: 'https://leonardo.osnova.io/a4306833-96a7-8155-71e9-47472c000150/',
+            img: 'https://leonardo.osnova.io/4fef8a73-033c-8bbd-db29-f996a5bd745f/',
+            img2x: 'https://leonardo.osnova.io/44ed0f8e-05e6-2739-f820-cc1056fa888f/',
         }, {
-            img: 'https://leonardo.osnova.io/a92fb875-ee91-d6d5-0941-e06f72998eed/',
-            img2x: 'https://leonardo.osnova.io/a11e9907-1c33-87fb-91f0-ec9d52133580/',
+            img: 'https://leonardo.osnova.io/fffba824-4e37-70f0-e2a4-c3fa4de2ff66/',
+            img2x: 'https://leonardo.osnova.io/501efaa2-1003-d127-59f7-6d81e1f63830/',
         }, {
-            img: 'https://leonardo.osnova.io/02d7d7cf-726d-f024-982d-8bf116116d85/',
-            img2x: 'https://leonardo.osnova.io/bb83f3a9-fd54-a18d-21c7-e6141754b1ed/',
+            img: 'https://leonardo.osnova.io/3fc726ba-2485-3818-91ad-ee78d10f797f/',
+            img2x: 'https://leonardo.osnova.io/9319ab04-7ef9-1fb5-8852-e04b9d115732/',
         }, {
-            img: 'https://leonardo.osnova.io/c9817876-00f4-650f-e030-4179e6fe317a/',
-            img2x: 'https://leonardo.osnova.io/f098c191-7039-2675-4a83-656f0b2044d4/',
+            img: 'https://leonardo.osnova.io/8aa1ea53-bec8-965a-a7a4-1d40b7deb48c/',
+            img2x: 'https://leonardo.osnova.io/66984659-03e9-798b-dd1c-7c8d10f4ef3c/',
         }],
         options: [{
             text: 'Лого «МегаФона»',
@@ -80,54 +80,54 @@ export default {
             text: 'Лого Delivery Club'
         }]
     }, {
-        msg: 'Это рубли.',
+        msg: 'Это Стоунхендж.',
         images: [{
-            img: 'https://leonardo.osnova.io/a3efcbca-349d-ca62-69fa-23c28548b2b0/',
-            img2x: 'https://leonardo.osnova.io/ee9c3b44-25c2-d8ae-c06b-164b11fbaedc/',
+            img: 'https://leonardo.osnova.io/fdae1745-f551-8acc-e8b5-7f3bf141c46b/',
+            img2x: 'https://leonardo.osnova.io/5f4ea891-8c5d-e1d6-35c2-8c5706a001ab/',
         }, {
-            img: 'https://leonardo.osnova.io/9e1c8de5-66af-bee8-9c60-3dd80d01d0da/',
-            img2x: 'https://leonardo.osnova.io/a31d254b-90cb-b937-e6cd-a71401eb49e7/',
+            img: 'https://leonardo.osnova.io/755325f2-14a7-89aa-75da-29c1e6578959/',
+            img2x: 'https://leonardo.osnova.io/8f3cb3db-04f5-a295-4292-a6e3551cc59a/',
         }, {
-            img: 'https://leonardo.osnova.io/7a0d2df9-f8fc-33c2-d173-1f619cf7eb88/',
-            img2x: 'https://leonardo.osnova.io/4e9a495d-34db-e2b8-fda6-d8d9d40a6b68/',
+            img: 'https://leonardo.osnova.io/463e9650-5c19-0e11-3faf-b9c3d1834832/',
+            img2x: 'https://leonardo.osnova.io/ffd366b5-e8fa-0b09-666d-47e41a28d9cb/',
         }, {
-            img: 'https://leonardo.osnova.io/650a384b-3465-42bf-a7b1-c2a3e0b0657d/',
-            img2x: 'https://leonardo.osnova.io/d029a5c2-b420-3533-0aa9-be7a9046243d/',
+            img: 'https://leonardo.osnova.io/f67ccfca-4109-9e71-3233-35b20fe7636b/',
+            img2x: 'https://leonardo.osnova.io/36208a36-8bb3-ef09-7fe4-d9fb238690eb/',
         }],
         options: [{
-            text: 'Рубли',
+            text: 'Стоунхендж',
             isCorrect: true
         }, {
-            text: 'Доллары'
+            text: 'Minecraft'
         }, {
-            text: 'Евро'
+            text: '«Три богатыря»'
         }, {
-            text: 'Йены'
+            text: 'Солдаты в окопе'
         }]
     }, {
-        msg: 'Это синее платье.',
+        msg: 'Это девушка в красном из «Матрицы».',
         images: [{
-            img: 'https://leonardo.osnova.io/cecd86ef-6c36-53e2-34e3-a153337cb2d7/',
-            img2x: 'https://leonardo.osnova.io/b980d4cf-ed38-bfa7-87ff-1c8d6d8974b0/',
+            img: 'https://leonardo.osnova.io/04fba2d1-5314-d372-126f-adb97361df0f/',
+            img2x: 'https://leonardo.osnova.io/a07fd4b7-3488-bb44-6592-a1d4c9713d84/',
         }, {
-            img: 'https://leonardo.osnova.io/34a23e1e-206e-a07d-90d2-78dae6756b35/',
-            img2x: 'https://leonardo.osnova.io/44c39a02-5769-a7d7-4326-e509eb13c523/',
+            img: 'https://leonardo.osnova.io/9bb30a9b-f503-a09a-f645-5bbea7a211ad/',
+            img2x: 'https://leonardo.osnova.io/2690770c-40d2-2e4c-858e-1011e32de597/',
         }, {
-            img: 'https://leonardo.osnova.io/afb1517a-7d2b-82d2-ad54-423bce1fdbae/',
-            img2x: 'https://leonardo.osnova.io/9acffbf9-52bf-a0ee-8a00-5240971da594/',
+            img: 'https://leonardo.osnova.io/0127c9ed-ab01-0502-d57b-8c7756b36478/',
+            img2x: 'https://leonardo.osnova.io/0704b2dc-8428-f061-e3cf-85330fb16805/',
         }, {
-            img: 'https://leonardo.osnova.io/e37177ba-7e80-f1a0-658a-470c9d8d8af1/',
-            img2x: 'https://leonardo.osnova.io/13313e92-08a7-9a34-bdd1-d918ad0eb441/',
+            img: 'https://leonardo.osnova.io/ee44c504-d00e-05b7-42be-223aef0e5e47/',
+            img2x: 'https://leonardo.osnova.io/f8cd13e3-17b2-7253-e9ce-48acb613a68e/',
         }],
         options: [{
-            text: 'Синее платье',
+            text: 'Девушка в красном из «Матрицы»',
             isCorrect: true
         }, {
-            text: 'Белое платье'
+            text: 'Мем «Неверный парень»'
         }, {
-            text: 'Янни'
+            text: 'Кейт Аптон на NY Fashion Week'
         }, {
-            text: 'Лорел'
+            text: 'Бутылка Coca-Cola'
         }]
     }, {
         msg: 'Это дискета.',
@@ -141,8 +141,8 @@ export default {
             img: 'https://leonardo.osnova.io/2596597a-a891-717a-56dd-8dd2cfe262eb/',
             img2x: 'https://leonardo.osnova.io/0f85b496-d12f-e170-0d0b-d2abb6b3cba2/',
         }, {
-            img: 'https://leonardo.osnova.io/2053980b-3c9f-368e-81a7-44d2370a1174/',
-            img2x: 'https://leonardo.osnova.io/93c533c9-443d-c696-0939-ff8dfeedadaa/',
+            img: 'https://leonardo.osnova.io/9899e4f0-9278-a3bf-420b-c9a667bea2e7/',
+            img2x: 'https://leonardo.osnova.io/cb0cfbe8-8912-360e-2ee0-a43ca266fc2e/',
         }],
         options: [{
             text: 'Дискета',
@@ -216,8 +216,8 @@ export default {
             img: 'https://leonardo.osnova.io/839abd90-7c2f-3795-e3d4-b3712bf32ad4/',
             img2x: 'https://leonardo.osnova.io/820fce64-29a6-d303-633c-9f304444b466/',
         }, {
-            img: 'https://leonardo.osnova.io/f233d8f9-1c9c-292b-4dde-109ecad080a2/',
-            img2x: 'https://leonardo.osnova.io/df1a2ccb-881c-fc82-9bb2-5df53e654d75/',
+            img: 'https://leonardo.osnova.io/cf2dcce5-83e1-b97c-8304-a79841eddb49/',
+            img2x: 'https://leonardo.osnova.io/b4560ea9-c8e7-6449-af54-9d4fac238521/',
         }],
         options: [{
             text: 'Дуров с голым торсом',
@@ -241,8 +241,8 @@ export default {
             img: 'https://leonardo.osnova.io/142d955a-dea2-fddf-2b87-3a5c483a8334/',
             img2x: 'https://leonardo.osnova.io/d7139c72-2c0c-55af-3ac2-b31f83643393/',
         }, {
-            img: 'https://leonardo.osnova.io/65a0f63c-da7f-8801-9517-62d36d718520/',
-            img2x: 'https://leonardo.osnova.io/d2c2d970-55ab-893e-c467-6d5beafc43c3/',
+            img: 'https://leonardo.osnova.io/f2eacd5b-c474-2521-21f6-81a3e41b3370/',
+            img2x: 'https://leonardo.osnova.io/42e70259-2f62-b91f-cc1b-fe5fe21f603a/',
         }],
         options: [{
             text: 'Falcon 9',

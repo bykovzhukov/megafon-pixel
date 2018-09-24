@@ -587,6 +587,9 @@
                 
                 &:hover
                     opacity .6
+                    
+                    @media (hover none), (hover on-demand)
+                        opacity 1
             
             @media $mq.iphone6
                 font-size 22px

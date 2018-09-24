@@ -30,29 +30,29 @@ export default {
             text: 'Улитка Гэри'
         }]
     }, {
-        msg: 'Это Греф в «костюме инвалида».',
+        msg: 'Это FACE.',
         images: [{
-            img: 'https://leonardo.osnova.io/6de63272-1221-8edb-8ce8-c18fa84c54f5/',
-            img2x: 'https://leonardo.osnova.io/a0709e94-4bfa-c97a-3e69-304c3b9170f1/',
+            img: 'https://leonardo.osnova.io/2fb87bb5-3d92-9957-d5d0-a33eddbdba82/',
+            img2x: 'https://leonardo.osnova.io/f72a626d-14d3-f514-8e47-214a51dddf84/',
         }, {
-            img: 'https://leonardo.osnova.io/023299f4-5406-1abb-a193-b0ee7311bd9d/',
-            img2x: 'https://leonardo.osnova.io/f6fee303-04e4-98d6-0625-ff66519c503e/',
+            img: 'https://leonardo.osnova.io/37ddede0-02fe-1e11-0103-7d5660c282da/',
+            img2x: 'https://leonardo.osnova.io/f95ef2cc-5ccb-c1d7-90de-142065874df2/',
         }, {
-            img: 'https://leonardo.osnova.io/35a4f326-762d-32ef-d14c-aa4a9ac9f60e/',
-            img2x: 'https://leonardo.osnova.io/7a67b68b-72d5-d90f-448c-2550bfbd0121/',
+            img: 'https://leonardo.osnova.io/74745c0d-a619-fe29-0b06-f4b296b517fa/',
+            img2x: 'https://leonardo.osnova.io/38efd874-d986-440c-fab7-0d33d1ea4f86/',
         }, {
-            img: 'https://leonardo.osnova.io/583ce2d5-dd7c-5b15-bda2-c33d730935f5/',
-            img2x: 'https://leonardo.osnova.io/4ec00ae4-6d37-8def-ccfe-03819e7ac7b2/',
+            img: 'https://leonardo.osnova.io/e82a0aea-88c3-f0bc-e615-469387e6d641/',
+            img2x: 'https://leonardo.osnova.io/41022690-895c-15b3-0342-ac4ebe8360c9/',
         }],
         options: [{
-            text: 'Греф в «костюме инвалида»',
+            text: 'FACE',
             isCorrect: true
         }, {
-            text: 'Робокоп'
+            text: 'Guf'
         }, {
-            text: 'Шварцнейггер'
+            text: 'Oxxxymiron'
         }, {
-            text: 'Том Харди'
+            text: 'Childish Gambino'
         }]
     }, {
         msg: 'Это лого «МегаФона».',
@@ -105,29 +105,29 @@ export default {
             text: 'Солдаты в окопе'
         }]
     }, {
-        msg: 'Это девушка в красном из «Матрицы».',
+        msg: 'Это iPhone XS.',
         images: [{
-            img: 'https://leonardo.osnova.io/04fba2d1-5314-d372-126f-adb97361df0f/',
-            img2x: 'https://leonardo.osnova.io/a07fd4b7-3488-bb44-6592-a1d4c9713d84/',
+            img: 'https://leonardo.osnova.io/adbb5abe-eab6-fa45-cbf0-7279cae73439/',
+            img2x: 'https://leonardo.osnova.io/2dd676bb-ccd3-5c23-d8e4-1a61285fe62b/',
         }, {
-            img: 'https://leonardo.osnova.io/9bb30a9b-f503-a09a-f645-5bbea7a211ad/',
-            img2x: 'https://leonardo.osnova.io/2690770c-40d2-2e4c-858e-1011e32de597/',
+            img: 'https://leonardo.osnova.io/8229df68-6b87-0896-cb3c-fc2313ecddb8/',
+            img2x: 'https://leonardo.osnova.io/1da95946-b3e9-c0e9-305e-c3dec7288b95/',
         }, {
-            img: 'https://leonardo.osnova.io/0127c9ed-ab01-0502-d57b-8c7756b36478/',
-            img2x: 'https://leonardo.osnova.io/0704b2dc-8428-f061-e3cf-85330fb16805/',
+            img: 'https://leonardo.osnova.io/ffa7e66c-c5eb-9b7b-14d1-972128444ab7/',
+            img2x: 'https://leonardo.osnova.io/8fc1cd52-3527-9f84-1320-97409ffc260f/',
         }, {
-            img: 'https://leonardo.osnova.io/ee44c504-d00e-05b7-42be-223aef0e5e47/',
-            img2x: 'https://leonardo.osnova.io/f8cd13e3-17b2-7253-e9ce-48acb613a68e/',
+            img: 'https://leonardo.osnova.io/23aed5f7-e978-319a-2a4e-5cda97bc4ac5/',
+            img2x: 'https://leonardo.osnova.io/5685c066-4845-0690-a5d9-6a0aedd3e48e/',
         }],
         options: [{
-            text: 'Девушка в красном из «Матрицы»',
+            text: 'iPhone XS',
             isCorrect: true
         }, {
-            text: 'Мем «Неверный парень»'
+            text: 'Поверхность Марса'
         }, {
-            text: 'Кейт Аптон на NY Fashion Week'
+            text: 'Volvo 360c'
         }, {
-            text: 'Бутылка Coca-Cola'
+            text: 'Жук-дровосек'
         }]
     }, {
         msg: 'Это дискета.',

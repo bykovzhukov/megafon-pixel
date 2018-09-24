@@ -578,9 +578,15 @@
 
         &__text
             color #fff
-            font-size 16px
             font-weight 700
             line-height 1.389em
+            
+            a
+                border-bottom 1px solid currentColor
+                transition opacity .2s
+                
+                &:hover
+                    opacity .6
             
             @media $mq.iphone6
                 font-size 22px

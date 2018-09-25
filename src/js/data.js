@@ -130,29 +130,29 @@ export default {
             text: 'Жук-дровосек'
         }]
     }, {
-        msg: 'Это дискета.',
+        msg: 'Это Хоакин Феникс.',
         images: [{
-            img: 'https://leonardo.osnova.io/41d69d6e-c3e3-699a-695c-494524ed0d9d/',
-            img2x: 'https://leonardo.osnova.io/9efd735f-ee29-1647-92c6-3aeb83f81408/',
+            img: 'https://leonardo.osnova.io/f6cc2bf8-20dc-1b4f-64c8-456733982891/',
+            img2x: 'https://leonardo.osnova.io/e2f479d2-9626-4c64-5765-99b326643d41/',
         }, {
-            img: 'https://leonardo.osnova.io/2596597a-a891-717a-56dd-8dd2cfe262eb/',
-            img2x: 'https://leonardo.osnova.io/0f85b496-d12f-e170-0d0b-d2abb6b3cba2/',
+            img: 'https://leonardo.osnova.io/c21d5463-b764-5ffe-ce57-ba290ad33030/',
+            img2x: 'https://leonardo.osnova.io/0730c2aa-182b-8cd8-6ea1-4e217560ce17/',
         }, {
-            img: 'https://leonardo.osnova.io/2596597a-a891-717a-56dd-8dd2cfe262eb/',
-            img2x: 'https://leonardo.osnova.io/0f85b496-d12f-e170-0d0b-d2abb6b3cba2/',
+            img: 'https://leonardo.osnova.io/65a482b8-0f64-b77b-cff3-ce875d3ebe16/',
+            img2x: 'https://leonardo.osnova.io/1befcd4d-6395-01bb-1d2b-d94656767cc1/',
         }, {
-            img: 'https://leonardo.osnova.io/9899e4f0-9278-a3bf-420b-c9a667bea2e7/',
-            img2x: 'https://leonardo.osnova.io/cb0cfbe8-8912-360e-2ee0-a43ca266fc2e/',
+            img: 'https://leonardo.osnova.io/5fef5cce-7673-1a39-9cc0-a6db9bb9a70a/',
+            img2x: 'https://leonardo.osnova.io/f2194d57-8ef6-9a0b-ede0-4b27781c9fe4/',
         }],
         options: [{
-            text: 'Дискета',
+            text: 'Хоакин Феникс',
             isCorrect: true
         }, {
-            text: '«Черный квадрат»'
+            text: 'Джаред Лето'
         }, {
-            text: 'Карманный ПК'
+            text: 'Хит Леджер'
         }, {
-            text: 'Печенье'
+            text: 'Джек Николсон'
         }]
     }, {
         msg: 'Это сайт Роскомнадзора.',

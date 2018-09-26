@@ -94,7 +94,7 @@ class Special extends BaseSpecial {
             innerHTML: '<p>С <a href="https://moscow.megafon.ru/internet/4g/" target="_blank">самым быстрым мобильным интернетом</a> от «МегаФона» не придётся угадывать, что изображено на картинке — всё загрузится моментально.</p>'
         });
         EL.rBtn = makeElement('div', CSS.main + '-result__btn', {
-            innerHTML: '<a href="#" class="MegafonPixel-btn" data-caption="Подкючить"></a>'
+            innerHTML: '<a href="#" class="MegafonPixel-btn" data-caption="Подключить"></a>'
         });
 
         EL.rFigureBottom.appendChild(EL.rShare);
@@ -219,12 +219,12 @@ class Special extends BaseSpecial {
                 setTimeout(() => {
                     this.answered = false;
                     this.showAnswer(true);
-                }, 1000);
+                }, 500);
             } else {
                 setTimeout(() => {
                     this.answered = false;
                     this.showAnswer(undefined);
-                }, 1000);
+                }, 500);
             }
 
         } else {

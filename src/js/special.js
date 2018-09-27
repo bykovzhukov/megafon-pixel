@@ -50,6 +50,9 @@ class Special extends BaseSpecial {
             innerHTML: '<span></span><span></span><span></span><span></span>'
         });
         EL.qFigureImg = makeElement('img', CSS.main + '-q__figure-img');
+        EL.qFigureHint = makeElement('div', CSS.main + '-q__figure-hint', {
+            textContent: 'Попробуйте еще раз'
+        });
         EL.qOptions = makeElement('div', CSS.main + '-q__options');
 
         EL.qAnswer = makeElement('div', CSS.main + '-q__answer');
@@ -84,7 +87,7 @@ class Special extends BaseSpecial {
         EL.rFigureBottom = makeElement('div', CSS.main + '-result__figure-bottom');
         EL.rShare = makeElement('div', CSS.main + '-result__share');
         EL.rRestartBtn = makeElement('div', CSS.main + '-result__restart-btn', {
-            innerHTML: '<span>Пройти еще раз</span>' + Svg.refresh,
+            innerHTML: '<span>Пройти ещё раз</span>' + Svg.refresh,
             data: {
                 click: 'restart'
             }
@@ -235,6 +238,15 @@ class Special extends BaseSpecial {
 
             if (this.currentAttempts > 2) {
                 this.showAnswer(false);
+            } else {
+                EL.qFigureHint.style = '';
+                EL.qFigure.contains(EL.qFigureHint) ? '' : EL.qFigure.appendChild(EL.qFigureHint);
+
+                animate(EL.qFigureHint, 'fadeInDown', '600ms').then(() => {
+                    animate(EL.qFigureHint, 'fadeOutDown', '600ms', '200ms').then(() => {
+                        EL.qFigure.contains(EL.qFigureHint) ? EL.qFigure.removeChild(EL.qFigureHint) : '';
+                    });
+                });
             }
         }
     }

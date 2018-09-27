@@ -380,6 +380,48 @@
             display block
             max-width 100%
             margin 0 auto
+            
+        &__figure-hint
+            position absolute
+            z-index 2
+            top 0
+            bottom 0
+            left 0
+            right 0
+            width 260px
+            height 64px
+            padding 0 10px
+            margin auto
+            font-size 22px
+            font-weight 700
+            line-height 64px
+            text-align center
+            background-color #fff
+            box-shadow 10px 10px 0 rgba(68,68,68,.7)
+            
+            @media $mq.iphone6
+                width 280px
+            
+            &::before
+            &::after
+                content ''
+                position absolute
+                bottom -20px
+                left 20px
+                width 0
+                height 0
+                border-style solid
+                border-width 20px 20px 0 0
+                border-color #fff transparent transparent transparent
+                
+            &::before
+                z-index 1
+                bottom -30px
+                left 30px
+                border-top-color rgba(68,68,68,.7)
+                
+            &::after
+                z-index 2
 
         &__options
             display flex
